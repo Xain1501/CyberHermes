@@ -1,13 +1,38 @@
+# Virtual Environment
 venv/
-models/
-logs/
+
+# Environment Variables
+.env
+
+# Python Cache
 __pycache__/
 *.pyc
 *.pyo
-*.gguf
-.env
+
+# IDE Settings
 .vscode/
 .idea/
+
+# Local Models
+models/
+*.gguf
+
+# external dependencies /repos
 llama.cpp/
+loghub/
 
+# Runtime Logs
+logs/*
+!logs/.gitkeep
 
+# Datasets (keep folders, ignore contents)
+datasets/hdfs/*
+!datasets/hdfs/.gitkeep
+
+datasets/cic_ids/*
+!datasets/cic_ids/.gitkeep
+
+# Keep curated injection samples
+# (Remove the next line if you decide to ignore it later)
+!datasets/injections/
+!datasets/injections/injection_samples.js
