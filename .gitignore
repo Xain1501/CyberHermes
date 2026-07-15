@@ -36,3 +36,6 @@ datasets/cic_ids/*
 # (Remove the next line if you decide to ignore it later)
 !datasets/injections/
 !datasets/injections/injection_samples.js
+
+processed/*
+!processed/.gitkeep
